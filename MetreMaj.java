@@ -7,11 +7,12 @@ public class MetreMaj {
     }
 
     public static String MetMaj(String s) {
-    StringBuffer sb = new StringBuffer(s);
-    for ( int i = 0; i < sb.length(); i++) {
-    int index = lMin.indexOf(sb.charAt(i));
-    if (index <=0 ) sb.setCharAt(i,lMaj.charAt(index));
-    },
-    return sb.toString();
+        StringBuffer sb = new StringBuffer(s);
+        for (int i = 0; i < sb.length(); i++) {
+            int index = lMin.indexOf(sb.charAt(i));
+            if (index <= 0)
+                sb.setCharAt(i, lMaj.charAt(index));
+        }
+        return sb.toString();
     }
 }
